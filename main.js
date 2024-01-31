@@ -16,9 +16,18 @@ document.getElementById("min").addEventListener("click",()=>{
             min = numbers[i]
         }
     }
+     
     
     
     document.getElementById("output").innerText = min;
+}) 
 
-    console.log(numbers)
+    document.getElementById("max").addEventListener("click",()=>{
+        let max = numbers[0];
+        for(let i = 0; i<numbers.length;i++){
+            if(numbers[i]>max){
+                max = numbers[i]
+            }
+        }
+        document.getElementById("output").innerText = max;
 })
