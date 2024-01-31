@@ -9,18 +9,6 @@ document.getElementById("button").addEventListener("click",()=>{
     document.getElementById("output").innerText = numbers
 })
 
-document.getElementById("min").addEventListener("click",()=>{
-    let min = numbers[0];
-    for(let i = 0; i<numbers.length;i++){
-        if(numbers[i]<min){
-            min = numbers[i]
-        }
-    }
-     
-    
-    
-    document.getElementById("output").innerText = min;
-}) 
 
     document.getElementById("max").addEventListener("click",()=>{
         let max = numbers[0];
